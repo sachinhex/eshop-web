@@ -1,0 +1,155 @@
+/* Landing page style starts here */
+body {
+	overflow-x: hidden;
+}
+.navbar-notifications {
+	.fa-shopping-bag {
+		font-size: 1.3em;
+	}
+}
+.landing-page-wrapper {
+	.carousel {
+		.carousel-inner {
+			.carousel-item {
+				img {
+					margin-left: 0;
+					margin-right: 0;
+				}
+			}
+		}
+	}
+	.card {
+		cursor: pointer;
+	}
+}
+#multipleCarousel.carousel {
+	&:hover {
+		box-shadow: none;
+	}
+	&:focus {
+		box-shadow: none;
+	}
+}
+#multipleCarousel {
+	.carousel-inner {
+		.carousel-item.active {
+			display: flex;
+		}
+		.carousel-item-next {
+			display: flex;
+			transform: translateX(25%);
+		}
+		.carousel-item-prev {
+			display: flex;
+			transform: translateX(-25%);
+		}
+		.carousel-item-right.active {
+			transform: translateX(25%);
+		}
+		.carousel-item-left.active {
+			transform: translateX(-25%);
+		}
+		.carousel-item-right {
+			transform: translateX(0);
+		}
+		.carousel-item-left {
+			transform: translateX(0);
+		}
+	}
+}
+
+/* Product page style starts here */
+.product-page {
+	.price-block {
+		font-size: 2rem;
+		.price-old {
+			float: left;
+			font-size: 65%;
+			color: #f43a59;
+			margin-top: 6px;
+			text-decoration: line-through;
+			margin-left: 10px;
+		}
+		.price-discount {
+			padding-top: 0;
+			margin-top: 6px;
+			margin-left: 10px;
+			font-size: 65%;
+			color: #0ad251;
+			float: left;
+			clear: none;
+		}
+	}
+	.ratings {
+		clear: both;
+	}
+}
+.product-info {
+	.price-block {
+		.price-new {
+			font-size: 15px;
+			font-weight: 500;
+			float: none;
+		}
+		.price-old {
+			font-size: 80%;
+			color: #f43a59;
+			margin-top: 11px;
+			margin-left: 0px;
+			text-decoration: line-through;
+			float: none;
+		}
+		.price-discount {
+			padding-top: 0;
+			font-size: 80%;
+			clear: both;
+			color: #0ad251;
+		}
+	}
+	.ratings {
+		.batch-icon {
+			font-size: 1.6rem;
+			color: #4f5b60;
+			cursor: pointer;
+			margin: 0 -4px;
+			opacity: 0.2;
+			&:hover {
+				color: #fce418;
+				opacity: 0.5;
+			}
+			&:focus {
+				color: #fce418;
+				opacity: 0.5;
+			}
+		}
+		.batch-icon.rating-highlighted {
+			color: #fce418;
+			opacity: 1;
+		}
+	}
+}
+@media (min-width: 992px) {
+	.navbar-sidebar-horizontal.fixed-top {
+		+ {
+			.right-column {
+				>.sidebar-horizontal.fixed-top {
+					+ {
+						.main-content {
+							padding-top: 105px !important;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media (min-width: 1340px) {
+	.landing-page-wrapper {
+		#carouselExampleIndicators.carousel {
+			.carousel-inner {
+				height: 60vh;
+				cursor: pointer;
+			}
+		}
+	}
+}
