@@ -5293,9 +5293,36 @@ input[type=date].valid, input[type=date]:focus.valid, input[type=datetime-local]
     bottom: 0;
     transform: rotate(-90deg); }
 
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  text-transform: none; }
+
+.rm-move-btn .btn {
+  min-width: 122px;
+  margin: 2px 0; }
+
+.modal-header .modal-title {
+  margin-bottom: 4px !important;
+  margin-top: 5px;
+  font-weight: 500 !important; }
+
+.modal-header .close {
+  font-size: 2.5rem;
+  font-weight: 400; }
+
 /* Landing page style starts here */
 body {
   overflow-x: hidden; }
+
+.navbar {
+  padding: 1rem 3rem !important; }
+
+.navbar-sidebar-horizontal.bg-dark, .navbar-sidebar-horizontal {
+  z-index: 9000; }
+
+.navbar-sidebar-horizontal.bg-dark.fixed-top + .right-column > .sidebar-horizontal.fixed-top,
+.navbar-sidebar-horizontal.fixed-top + .right-column > .sidebar-horizontal.fixed-top {
+  top: 75.5px;
+  padding: 0.5rem 3rem !important; }
 
 .navbar-notifications .fa-shopping-bag {
   font-size: 1.3em; }
@@ -5396,7 +5423,7 @@ body {
 
 @media (min-width: 992px) {
   .navbar-sidebar-horizontal.fixed-top + .right-column > .sidebar-horizontal.fixed-top + .main-content {
-    padding-top: 105px !important; } }
+    padding-top: 73px !important; } }
 
 @media (min-width: 1340px) {
   .landing-page-wrapper #carouselExampleIndicators.carousel .carousel-inner {
